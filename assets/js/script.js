@@ -29,11 +29,18 @@ achievementsItems.forEach(item => {
     const modalImg = modalContainer.querySelector(`[data-modal-img="${itemId}"]`);
     const modalTitle = modalContainer.querySelector(`[data-modal-title="${itemId}"]`);
     const modalText = modalContainer.querySelector(`[data-modal-text="${itemId}"]`);
+    const modalDate = modalContainer.querySelector(`[data-modal-date="${itemId}"]`);
 
     modalImg.src = this.querySelector("[data-achievements-avatar]").src;
     modalImg.alt = this.querySelector("[data-achievements-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-achievements-title]").innerHTML;
     modalText.innerHTML = this.querySelector("[data-achievements-text]").innerHTML;
+    
+    // Update the date if it exists in the achievement item
+    const dateElement = this.querySelector("[data-achievements-date]");
+    if (dateElement && modalDate) {
+      modalDate.innerHTML = dateElement.innerHTML;
+    }
 
     achievementsModalFunc(modalContainer, overlay);
 
