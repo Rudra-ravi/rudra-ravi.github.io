@@ -601,6 +601,47 @@ main {
 
 .achievements-title { margin-bottom: 20px; }
 
+.achievements-slider {
+  position: relative;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-gradient-onyx);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.25s ease;
+}
+
+.slider-btn:hover {
+  color: var(--vegas-gold);
+}
+
+.slider-btn.prev {
+  left: -20px;
+}
+
+.slider-btn.next {
+  right: -20px;
+}
+
+@media (max-width: 768px) {
+  .slider-btn {
+    display: none;
+  }
+}
+
 .achievements-list {
   display: flex;
   justify-content: flex-start;
@@ -882,6 +923,48 @@ main {
 }
 
 .certifications-item img:hover { filter: grayscale(0); }
+
+.certifications-slider {
+  position: relative;
+  padding: 0 30px; /* Add padding to make room for the buttons */
+}
+
+.certifications-slider .slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--bg-gradient-onyx);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  color: var(--orange-yellow-crayola);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  transition: 0.25s ease;
+}
+
+.certifications-slider .slider-btn:hover {
+  color: var(--vegas-gold);
+}
+
+.certifications-slider .slider-btn.certifications-prev {
+  left: 0;
+}
+
+.certifications-slider .slider-btn.certifications-next {
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .certifications-slider .slider-btn {
+    display: none;
+  }
+}
 
 
 

@@ -119,3 +119,23 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// Slider functionality
+function initSlider(containerClass) {
+  const container = document.querySelector(`.${containerClass}`);
+  const list = container.querySelector('.has-scrollbar');
+  const prevBtn = container.querySelector(containerClass === 'certifications-slider' ? '.certifications-prev' : '.prev');
+  const nextBtn = container.querySelector(containerClass === 'certifications-slider' ? '.certifications-next' : '.next');
+
+  prevBtn.addEventListener('click', () => {
+    list.scrollBy({ left: -300, behavior: 'smooth' });
+  });
+
+  nextBtn.addEventListener('click', () => {
+    list.scrollBy({ left: 300, behavior: 'smooth' });
+  });
+}
+
+// Initialize sliders
+initSlider('achievements-slider');
+initSlider('certifications-slider');
