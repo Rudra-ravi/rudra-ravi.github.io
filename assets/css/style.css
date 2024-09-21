@@ -2380,8 +2380,14 @@ main {
 }
 
 /* Footer styles */
-.footer {
-  background: var(--eerie-black-2);
+.footer {.footer {
+  background: transparent;
+  color: var(--white-2); 
+}
+
+.footer p {
+  color: inherit; 
+}
   color: var(--light-gray);
   text-align: center;
   padding: 20px;
