@@ -565,7 +565,7 @@ main {
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
-  box-shadow: var(--shadow-2);
+  box-shadow: var (--shadow-2);
   z-index: 1;
 }
 
@@ -755,7 +755,7 @@ main {
 }
 
 .achievements-text p {
-  color: var(--light-gray);
+  color: var (--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.6;
@@ -2377,4 +2377,19 @@ main {
 
   .timeline-text { max-width: 700px; }
 
+}
+
+/* Footer styles */
+.footer {
+  background: var(--eerie-black-2);
+  color: var(--light-gray);
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid var(--jet);
+}
+
+.footer p {
+  margin: 0;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
 }
