@@ -25,7 +25,6 @@ I'm a passionate developer with expertise in mobile app development and a keen i
 - IT Specialist - Python (Certiport - A Pearson VUE Business)
 - Command-Line Captain (Red Hat)
 - Project Management Fundamentals (IBM)
-- 
 
 ## Education
 - B.Tech in Electronics and Communication Engineering, Manakula Vinayagar Institute of Technology
