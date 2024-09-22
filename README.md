@@ -1,5 +1,10 @@
 # Ravikumar E - Software Developer & Cybersecurity Enthusiast
 
+![image](https://github.com/user-attachments/assets/41d776af-f963-40a0-8dcb-1839db0f92f2)
+
+![image](https://github.com/user-attachments/assets/5c8c7fa3-e3fe-46cc-87c4-706d7326a642)
+
+
 ## About Me
 I'm a passionate developer with expertise in mobile app development and a keen interest in cybersecurity. Currently pursuing my B.Tech in Electronics and Communication Engineering, I bring a blend of technical skills and leadership experience to my projects.
 
