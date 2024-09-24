@@ -1,7 +1,15 @@
 'use strict';
 
 // element toggle function
-const elementToggleFunc = (elem) => { elem.classList.toggle("active"); }
+const elementToggleFunc = (elem) => { 
+  elem.classList.toggle("active"); 
+
+  // Change the direction of the arrow
+  const arrowIcon = elem.querySelector("ion-icon");
+  if (arrowIcon) {
+    arrowIcon.name = arrowIcon.name === "chevron-down" ? "chevron-up" : "chevron-down";
+  }
+}
 
 // sidebar variables
 const sidebar = document.querySelector("[data-sidebar]");
