@@ -42,4 +42,4 @@ I'm a passionate developer with expertise in mobile app development and a keen i
 - GitHub: [Rudra-ravi](https://github.com/Rudra-ravi)
 - Medium: [Ravikumar-e](https://medium.com/@Ravikumar-e)
 
-Feel free to reach out for collaborations or just a chat about technology!
+Feel free to reach out for collaborations or just a chat about technology!.
