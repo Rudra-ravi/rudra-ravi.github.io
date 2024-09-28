@@ -2391,7 +2391,6 @@ main {
   color: var(--light-gray);
   text-align: center;
   padding: 20px;
-  border-top: 1px solid var(--jet);
 }
 
 .footer p {
