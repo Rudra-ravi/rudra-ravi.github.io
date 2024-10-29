@@ -147,3 +147,11 @@ function initSlider(containerClass) {
 // Initialize sliders
 initSlider('achievements-slider');
 initSlider('certifications-slider');
+
+// Remove the 'X-Frame-Options' header and replace it with the 'Content-Security-Policy' header and 'frame-ancestors' directive
+document.addEventListener('DOMContentLoaded', function() {
+  const meta = document.createElement('meta');
+  meta.httpEquiv = 'Content-Security-Policy';
+  meta.content = "frame-ancestors 'self'";
+  document.getElementsByTagName('head')[0].appendChild(meta);
+});
