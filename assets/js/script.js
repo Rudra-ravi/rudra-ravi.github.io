@@ -155,3 +155,14 @@ document.addEventListener('DOMContentLoaded', function() {
   meta.content = "frame-ancestors 'self'";
   document.getElementsByTagName('head')[0].appendChild(meta);
 });
+
+// Remove deprecated StorageType.persistent usage and replace with navigator.storage API
+if (navigator.storage && navigator.storage.persist) {
+  navigator.storage.persist().then(persistent => {
+    if (persistent) {
+      console.log("Storage will not be cleared except by explicit user action");
+    } else {
+      console.log("Storage may be cleared by the UA under storage pressure.");
+    }
+  });
+}
